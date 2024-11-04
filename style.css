@@ -1,6 +1,12 @@
 body {
     font-family: "Poppins";
     font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-  
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
