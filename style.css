@@ -4,18 +4,20 @@ body {
     font-style: normal;
     margin: 12px;
     padding: 12px;
+    font-weight: 350;
     box-sizing: border-box;
 
 }
 
-p {
+p, ul{
     max-width: 850px;
-    word-wrap: break-word;
     line-height: 1.7;
+    font-size: large;
 }
 header {
     flex-direction: column;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -28,13 +30,48 @@ header {
     margin-right: 20px;
 }
 #introduction {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+#introduction h1 {
+    font-size: 2em;
 }
 .img1 {
     width: 850px;
     height: 520px;
     border-radius: 14px; 
 }
+.bold {
+    font-weight: 600;
+}
 
 
+
+.orange {
+    color: #D35400;
+}
+ul {
+    list-style: circle;
+}
+
+/*anchors*/
+a {
+    color: #D35400; 
+    text-decoration: underline; 
+    font-weight: 500; 
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: #A04000; 
+}
+
+a:visited {
+    color: #8E44AD; 
+}
+
+a:active {
+    color: #D35400; 
+    text-decoration: underline;
+}

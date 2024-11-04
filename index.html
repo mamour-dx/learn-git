@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoriel Git pour Débutant</title>
+    <title>Introduction à Git</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,21 +16,34 @@
         <img src="assets/Git-logo.svg.png" alt="git logo" class="logo">
         <h1>Comprendre Git en 5 minutes!</h1>
     </header>
-    <section id="sec-1" class="container">
         <div id="introduction" class="container">
             <img src="assets/github-mascot.jpg" alt="github mascot" class="img1">
             <p>Git est l’outil par excellence que tout développeur doit maîtriser. C’est 36 millions d’utilisateurs et 90% de part de marché. Si t’es pas parfaitement au point sur cette merveille, ça vaut le coup d’investir cinq minutes de ton temps.</p>
             <br>
-            <h2>Il était une fois</h2>
-            <p>Nous sommes en avril 2005 et la légende vivante Linus Torvald travaille énormément sur son bébé : Linux. Il bosse dessus depuis 1991 et tu l’imagines : le projet est énorme. Y’a beaucoup de code. Y’a encore plus de monde qui travaille sur ce code. Pour gérer tout ce bordel, Linus était partie sur le système de gestion de versions BitKeeper.
+            <h1>Il était une fois</h1>
+            <p>Nous sommes en avril 2005, et le célèbre <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Torvald</a> est à fond sur son projet de cœur : <a href="https://en.wikipedia.org/wiki/Linux" target="_blank">Linux</a>.<br><br>Il y bosse depuis 1991, et tu t’en doutes, le projet est colossal. Il y a une quantité massive de code. Et encore plus de personnes qui bossent dessus.<br><br>Pour organiser tout ce bazar, Linus utilisait jusqu’ici un système de gestion de versions nommé <span class="bold">BitKeeper</span>. Le souci avec BitKeeper, c’est que c’est un logiciel propriétaire. Ça, déjà, ça agace pas mal de monde dans la communauté open source autour de Linux. En plus, la version gratuite impose des limitations franchement lourdes. Comme si ça ne suffisait pas, du jour au lendemain, <a href="https://linuxfr.org/news/bitkeeper-plus-de-version-gratuite">la version gratuite de BitKeeper est retirée</a>.<br><br>Là, Linus Torvalds pète un câble et décide de coder lui-même un nouveau système de versionnage. Le développement FULGURANT de <a href="https://git-scm.com">Git</a> allait bientôt démarrer. Le 3 avril 2005, Linus se lance dans la création de Git. Le 6 avril 2005, il envoie un mail bien remonté pour annoncer qu’il bosse sur une alternative. Le 18 avril 2005, <a href="https://marc.info/?l=git&m=111377572329534">les premiers merges de branches</a> sont opérationnels ! Le 29 avril 2005, Git commence à être utilisé dans certaines parties de Linux. Et le 16 juin 2005, Git gérait toute la version 2.6.12 de Linux.</p>
+            <img src="assets/fiwwh.jpg" alt="">
+            <p>
+                Peu de temps après, Linus décida de filer les clefs à Junio Hamano qui en fit une version 1.0 déployée le 21 décembre 2005. Aujourd’hui, <span class="bold">Git est absolument partout.</span>
+            </p>
+            <h1>À quoi sert <span class="orange">Git</span> ?</h1>
+            <p>Git est un système de contrôle de version open source. Concrètement, c’est un outil qui te permet de <span class="orange">traquer tous les fichiers de ton projet</span>. Chaque modification de fichier est alors détectée par Git et versionnée dans une version instantanée. Un historique de modification va être disponible sur ton projet. Tu vas pouvoir le consulter et pourquoi pas même <span class="orange">revenir en arrière dans le temps !</span></p>
+            <img src="assets/time.png">
+            <br>
+            <p><span class="orange">Git est un outil qui va te permettre de savoir qui a touché à quel fichier, quand et comment.</span> Imagine, t’as 2000 fichiers et 5 développeurs qui travaillent en équipe dessus.</p>
+            <p>
+                <ul>                
+                    <li>
+                        Comment tu sais qui a fait quoi et quand ? Le versioning de Git va te permettre de le savoir.
+                    </li>
+                    <li>
+                        Comment t’es sûr que les développeurs ne se gênent pas en touchant les mêmes fichiers en même temps ? Encore une fois, Git à la rescousse avec son système de branches.
+                    </li>
+                </ul>
 
-                Le problème avec BitKeeper c’est que c’est d’abord un logiciel propriétaire. Déjà, ça énerve une partie de la communauté open source autour de Linux. En plus, la version gratuite vient avec des contraintes très pénibles. Comme si ça suffisait pas, du jour au lendemain, la version gratuite de BitKeeper est retirée.
-                
-                Immédiatement, Linux Torvald rage et décide de carrément coder son propre système de versionning. Le développement ÉCLAIR de Git était sur le point de commencer.
-                
-                Le 3 avril 2005 Linus commence à bosser sur Git. Le 6 avril 2005 il envoie un mail rempli de rage où il annonce qu’il travaille sur une solution de remplacement. Le 18 avril 2005 les premiers merges de branches fonctionnent ! Le 29 avril 2005, Git commence à être utilisé dans certaines parties de Linux. Le 16 juin 2005 Git gérait entièrement la version 2.6.12 de Linux.</p>
+            </p>
         </div>
+        
 
-    </section>
 
 </html>
