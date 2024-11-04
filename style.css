@@ -1,12 +1,21 @@
 body {
     font-family: "Poppins";
+    background-color: rgb(250, 238, 222);
     font-style: normal;
-    margin: 0;
-    padding: 0;
+    margin: 12px;
+    padding: 12px;
     box-sizing: border-box;
 }
-
 header {
-    background-color: #333;
-    padding: 10px 0;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
 }
