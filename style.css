@@ -9,7 +9,7 @@ body {
 
 }
 
-p, ul{
+p, ul, ol{
     max-width: 850px;
     line-height: 1.7;
     font-size: large;
