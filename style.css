@@ -1,115 +1,77 @@
 body {
     font-family: "Poppins";
+    background-color: rgb(250, 238, 222);
     font-style: normal;
-    margin: 0;
-    padding: 0;
+    margin: 12px;
+    padding: 12px;
+    font-weight: 350;
     box-sizing: border-box;
+
 }
 
+p, ul{
+    max-width: 850px;
+    line-height: 1.7;
+    font-size: large;
+}
 header {
-    background-color: #333;
-    padding: 10px 0;
+    flex-direction: column;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.logo {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+#introduction {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-
-.logo {
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
+#introduction h1 {
+    font-size: 2em;
+}
+.img1 {
+    width: 850px;
+    height: 520px;
+    border-radius: 14px; 
+}
+.bold {
+    font-weight: 600;
 }
 
-.nav-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
+
+
+.orange {
+    color: #D35400;
+}
+ul {
+    list-style: circle;
 }
 
-.nav-links li {
-    margin: 0 10px;
+/*anchors*/
+a {
+    color: #D35400; 
+    text-decoration: underline; 
+    font-weight: 500; 
+    transition: color 0.3s ease; 
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
+a:hover {
+    color: #A04000; 
 }
 
-.hero {
-    background: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+a:visited {
+    color: #8E44AD; 
 }
 
-.hero h1 {
-    font-size: 48px;
+a:active {
+    color: #D35400; 
+    text-decoration: underline;
 }
-
-.hero p {
-    font-size: 18px;
-    margin: 20px 0;
-}
-
-.hero .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #fff;
-    color: #007bff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.content {
-    padding: 50px 0;
-}
-
-.content h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.content p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.content ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-}
-
-  
