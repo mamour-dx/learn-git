@@ -5,6 +5,13 @@ body {
     margin: 12px;
     padding: 12px;
     box-sizing: border-box;
+
+}
+
+p {
+    max-width: 850px;
+    word-wrap: break-word;
+    line-height: 1.7;
 }
 header {
     flex-direction: column;
@@ -13,9 +20,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px;
 }
 .logo {
     width: 200px;
     height: auto;
     margin-right: 20px;
 }
+#introduction {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.img1 {
+    width: 850px;
+    height: 520px;
+    border-radius: 14px; 
+}
+
+
