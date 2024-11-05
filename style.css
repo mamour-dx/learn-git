@@ -116,3 +116,31 @@ footer p {
         opacity: 1;
     }
 }
+@media (max-width: 768px) {
+    p, ol, ul {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }  
+    .img1 {
+        width: 70%;
+        height: auto;
+    }
+    ol, ul {
+        padding: 0;
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 0.8rem;
+    }
+}
