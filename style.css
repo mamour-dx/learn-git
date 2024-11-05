@@ -46,7 +46,10 @@ header {
     font-weight: 600;
 }
 
-
+.code {
+    width: 50%;
+    border-radius: 30px;
+}
 
 .orange {
     color: #D35400;
