@@ -9,7 +9,7 @@ body {
 
 }
 
-p, ul{
+p, ul, ol{
     max-width: 850px;
     line-height: 1.7;
     font-size: large;
@@ -46,7 +46,10 @@ header {
     font-weight: 600;
 }
 
-
+.code {
+    width: 50%;
+    border-radius: 30px;
+}
 
 .orange {
     color: #D35400;
@@ -74,4 +77,42 @@ a:visited {
 a:active {
     color: #D35400; 
     text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer img {
+    width: 30px;
+    padding: 20px;
+}
+footer a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    margin-bottom: 2px;
+}
+footer p {
+    text-align: center;
+}
+
+.zoom-in {
+    animation: zoomIn 0.7s ease-in-out forwards;
+}
+
+.zoom-in-effect.visible {
+    opacity: 1; /* Rendre visible */
+    transform: scale(1); /* Zoomer */
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
