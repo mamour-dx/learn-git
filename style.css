@@ -94,6 +94,9 @@ footer a:hover {
     transform: scale(1.2);
     margin-bottom: 2px;
 }
+footer p {
+    text-align: center;
+}
 
 .zoom-in {
     animation: zoomIn 0.7s ease-in-out forwards;
