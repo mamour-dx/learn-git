@@ -96,7 +96,7 @@ footer a:hover {
 }
 
 .zoom-in {
-    animation: zoomIn 1.2s ease-in-out forwards;
+    animation: zoomIn 0.7s ease-in-out forwards;
 }
 
 .zoom-in-effect.visible {

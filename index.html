@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="container">
-        <img src="assets/Git-logo.svg.png" alt="git logo" class="logo">
+        <img src="assets/Git-logo.svg.png" alt="git logo" class="logo zoom-in">
         <h1>Comprendre Git en 5 minutes!</h1>
     </header>
         <div id="introduction" class="container">
@@ -54,7 +54,11 @@
                     Comment t’es sûr que les développeurs ne se gênent pas en touchant les mêmes fichiers en même temps ? Encore une fois, Git à la rescousse avec son système de branches.
                 </li>
             </ul>
-           
+            <figure>
+                <img src="assets/vscode.png" alt="" width="840">
+                <figcaption>Extension VS Code qui permet de visualiser tout ça: Gitlens</figcaption>
+            </figure>
+
             <p>
                 <span class="orange">
                     Chaque développeur va pouvoir travailler en parallèle avec leur propre copie du projet sur une branche personnelle.
@@ -69,6 +73,12 @@
                 <span class="orange">Comment</span> ça marche ?
             </h1>
             <p>
+                D'abord, il faut installer Git sur ta machine. Ensuite, tu vas pouvoir initialiser un dépôt Git dans ton projet. C’est ce qu’on appelle un <span class="orange">« repository »</span>. C’est là que Git va stocker toutes les versions de ton projet.
+                <br><br>
+                Pour se faire, rien de plus simple: 
+            </p>
+            <img src="assets/code5.png" alt="git init" class="code">
+            <p>
                 La première chose à comprendre avec le fonctionnement de Git c’est qu’il fait <span class="orange">des instantanés (snapshots en anglais) de ton projet pour le versionner.</span> Là où les autres systèmes de versioning comme Subversion et Perforce vont faire des diffs sur chaque fichier. Cette différence est importante. Elle va permettre à Git de se distinguer côté performance et travail de développeur en parallèle via 
                 <a href="https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref">
                     les branches !
@@ -79,10 +89,10 @@
                 On trouve trois zones bien distinctes en local sur ton poste de travail.
                 <ul>
                     <li>
-                        <span class="orange">Zone de travail (Working Directory)</span> : c’est là où ton dépôt git est initialisé et que tes fichiers vivent. C’est dans cette zone que tu touches à tous tes fichiers pendant que tu bosses. Une fois que tu veux versionner une version de ton projet, tu vas alors taper la commande « git add <fichier> » pour passer un fichier à la zone suivante.
+                        <span class="orange">Zone de travail (Working Directory)</span> : c’est là où ton dépôt git est initialisé et que tes fichiers vivent. C’est dans cette zone que tu touches à tous tes fichiers pendant que tu bosses. Une fois que tu veux versionner une version de ton projet, tu vas alors taper la commande <span class="orange">« git add » </span>pour passer un fichier à la zone suivante.
                     </li>
                     <li>
-                        <span class="orange">Zone de transit (Staging Area)</span> : la zone de transit est un endroit pour désigner les fichiers que tu veux versionner. Tu peux voir la commande « git add » comme une manière de mettre des objets dans un carton. Une fois que tu as désigné tout ce que tu voulais mettre dans ce carton, il sera prêt à être envoyé au dépôt avec la commande « git commit ».
+                        <span class="orange">Zone de transit (Staging Area)</span> : la zone de transit est un endroit pour désigner les fichiers que tu veux versionner. Tu peux voir la commande <span class="orange">« git add »</span> comme une manière de mettre des objets dans un carton. Une fois que tu as désigné tout ce que tu voulais mettre dans ce carton, il sera prêt à être envoyé au dépôt avec la commande <span class="orange">« git commit »</span>.
                     </li>
                     <li>
                         <span class="orange">Dépôt local (Local Repository)</span> : la zone de dépôt c’est là que les fameux instantanés de ton projet sont versionnés et stockés. Le truc important à comprendre c’est qu’une référence de version est créée pour chaque commit que tu fais. Chaque commit est donc une version de ton projet unique qui va vivre dans le dépôt et que tu pourras consulter/comparer quand tu voudras !
@@ -107,12 +117,41 @@
                     <li><span class="orange">Push</span> tes changements sur le dépôt remote</li>
                 </ol>
                 <p>
-                    Je pars du principe que tu as déjà un dépôt Git en local que tu as cloné d’un dépôt distant via la commande <span class="orange">git clone </span>. <br>Commençons par mettre à jour la branche principale.<span class="orange"> Au moment où j’écris ces lignes, par défaut, git nomme sa branche principale main.</span> Dans le futur, ça va surement changer. Pour que tu sois pas perdu la première fois, j’utilise le nom par défaut.
+                    Je pars du principe que tu as déjà un dépôt Git en local que tu as cloné d’un dépôt distant via la commande <span class="orange">git clone </span>. <br>Commençons par mettre à jour la branche principale: <span class="orange">master</span> 
                 </p>
-                
+                <img src="assets/code1.png" alt="" class="code">
+                <p>On utilise la commande <span class="orange">git pull</span> pour mettre à jour notre dépôt local avec les updates du dépôt distant. Ensuite, on crée une branche.</p>
+                <img src="assets/code2.png" alt="" class="code">
+                <p>
+                    Grâce à la commande <span class="orange">git checkout -b </span>on va créer une branche (une copie de la branche principale) et se placer dessus automatiquement. 
+                    <br>
+                    J’utilise le nom <span class="orange">"ma-nouvelle-branche" ici.</span>
+                    Quand tu bosses avec Git il est également conseillé de <a href="https://www.pauline-vos.nl/atomic-commits">commit fréquemment</a>. C’est ce qu’on va faire ici.
+                </p>
+                <img src="assets/code3.png" alt="" class="code">
+                <br>
+                    <p>
+                        La commande <span class="orange">git status</span> te permet de vérifier l'état de ton dépôt Git en local, en affichant les modifications en cours, les fichiers en attente de commit, et si ta branche est synchronisée avec le répo distant (remote).</p>
+                        <img src="assets/code4.png" alt="" class="code">
+                    <p>Et voila, tu as les bases pour utiliser Git partout!</p>
             </p>
-
+            <p>J’espère que cette introduction t’a donné envie d’en découvrir davantage. Pour vraiment maîtriser cet outil incroyable, il faudra pratiquer et plonger dans <a href="https://git-scm.com/docs/git#_git_commands">la documentation.</a></p>
+            <br>
+            <p>Tu peux aussi télécharger <a href="assets/git-recap.pdf" target="_blank">ce pdf</a> gratuitement pour avoir un résumé des commandes de bases à connaître.</p>
         </div>
-        
+        <footer>
+            <img src="assets/linus.jpg" alt="" class="code">
+            <div class="icons">
+            <a href="https://youtube.com/@mxr_codes" target="_blank"><img src="assets/socials/youtube.png" alt="YouTube MXR CODES" width=""></a>
+            <a href="https://instagram.com/mxr.codes" target="_blank"><img src="assets/socials/instagram.png" alt="Instagram mxr.codes"></a>
+            </div>
+            <br>
+            <p>💡 Fun fact: La construction de ce site web même est traqué ici, et tu peux y contribuer sur <a href="https://github.com/mamour-dx/learn-git" target="_blank">GitHub</a></p>
+        </footer>
 </html>
+
+
+
+
+
 
