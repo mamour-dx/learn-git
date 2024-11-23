@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,64 +9,127 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header class="container">
-        <img src="assets/Git-logo.svg.png" alt="git logo" class="logo zoom-in">
-        <h1>Comprendre Git en 5 minutes!</h1>
+    <nav class="navbar">
+        <div class="nav-content">
+            <img src="assets/Git-logo.svg.png" alt="git logo" class="nav-logo">
+            <div class="nav-title">Git Tutoriel</div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Comprendre Git en 5 minutes!</h1>
+            <img src="assets/github-mascot.jpg" alt="github mascot" class="hero-image">
+        </div>
     </header>
-        <div id="introduction" class="container">
-            <img src="assets/github-mascot.jpg" alt="github mascot" class="img1">
-            <p>
-                Git est l’outil par excellence que tout développeur doit maîtriser. C’est 36 millions d’utilisateurs et 90% de part de marché. Si t’es pas parfaitement au point sur cette merveille, ça vaut le coup d’investir cinq minutes de ton temps.</p>
+
+    <main class="content">
+        <section class="section">
+            <p class="intro-text">
+                Git est l'outil par excellence que tout développeur doit maîtriser. C'est 36 millions d'utilisateurs et
+                90% de part de marché. Si t'es pas parfaitement au point sur cette merveille, ça vaut le coup d'investir
+                cinq minutes de ton temps.
+            </p>
+
+            <article class="card">
+                <h2>Il était une fois</h2>
+                <p>
+                    Git est l’outil par excellence que tout développeur doit maîtriser. C’est 36 millions d’utilisateurs
+                    et 90% de part de marché. Si t’es pas parfaitement au point sur cette merveille, ça vaut le coup
+                    d’investir cinq minutes de ton temps.</p>
                 <br>
                 <h1>Il était une fois</h1>
                 <p>
-                    Nous sommes en avril 2005, et le célèbre <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Torvald</a> est à fond sur son projet de cœur : <a href="https://en.wikipedia.org/wiki/Linux" target="_blank">Linux</a>.
+                    Nous sommes en avril 2005, et le célèbre <a href="https://en.wikipedia.org/wiki/Linus_Torvalds"
+                        target="_blank">Linus Torvald</a> est à fond sur son projet de cœur : <a
+                        href="https://en.wikipedia.org/wiki/Linux" target="_blank">Linux</a>.
                     <br><br>
-                    Il y bosse depuis 1991, et tu t’en doutes, le projet est colossal. Il y a une quantité massive de code. Et encore plus de personnes qui bossent dessus.<br><br>Pour organiser tout ce bazar, Linus utilisait jusqu’ici un système de gestion de versions nommé <span class="bold">BitKeeper</span>. Le souci avec BitKeeper, c’est que c’est un logiciel propriétaire. Ça, déjà, ça agace pas mal de monde dans la communauté open source autour de Linux. En plus, la version gratuite impose des limitations franchement lourdes. Comme si ça ne suffisait pas, du jour au lendemain, <a href="https://linuxfr.org/news/bitkeeper-plus-de-version-gratuite">la version gratuite de BitKeeper est retirée</a>.
+                    Il y bosse depuis 1991, et tu t’en doutes, le projet est colossal. Il y a une quantité massive de
+                    code. Et encore plus de personnes qui bossent dessus.<br><br>Pour organiser tout ce bazar, Linus
+                    utilisait jusqu’ici un système de gestion de versions nommé <span class="bold">BitKeeper</span>. Le
+                    souci avec BitKeeper, c’est que c’est un logiciel propriétaire. Ça, déjà, ça agace pas mal de monde
+                    dans la communauté open source autour de Linux. En plus, la version gratuite impose des limitations
+                    franchement lourdes. Comme si ça ne suffisait pas, du jour au lendemain, <a
+                        href="https://linuxfr.org/news/bitkeeper-plus-de-version-gratuite">la version gratuite de
+                        BitKeeper est retirée</a>.
                     <br><br>
-                    Là, Linus Torvalds pète un câble et décide de coder lui-même un nouveau système de versionnage. Le développement FULGURANT de <a href="https://git-scm.com">Git</a> allait bientôt démarrer. Le 3 avril 2005, Linus se lance dans la création de Git. Le 6 avril 2005, il envoie un mail bien remonté pour annoncer qu’il bosse sur une alternative. Le 18 avril 2005, <a href="https://marc.info/?l=git&m=111377572329534">les premiers merges de branches</a> sont opérationnels ! Le 29 avril 2005, Git commence à être utilisé dans certaines parties de Linux. Et le 16 juin 2005, Git gérait toute la version 2.6.12 de Linux.
-            </p>
-            <img src="assets/fiwwh.jpg" alt="">
-            <p>
-                Peu de temps après, Linus décida de filer les clefs à Junio Hamano qui en fit une version 1.0 déployée le 21 décembre 2005. Aujourd’hui, <span class="bold">Git est absolument partout.</span>
-            </p>
-            <h1>À quoi sert <span class="orange">Git</span> ?</h1>
-            <p>
-                Git est un système de contrôle de version open source. Concrètement, c’est un outil qui te permet de <span class="orange">traquer tous les fichiers de ton projet</span>. Chaque modification de fichier est alors détectée par Git et versionnée dans une version instantanée. Un historique de modification va être disponible sur ton projet. Tu vas pouvoir le consulter et pourquoi pas même <span class="orange">revenir en arrière dans le temps !</span>
-            </p>
-            <img src="assets/time.png">
-            <br>
-            <p>
-                <span class="orange">
-                    Git est un outil qui va te permettre de savoir qui a touché à quel fichier, quand et comment.
-                </span> 
-                Imagine, t’as 2000 fichiers et 5 développeurs qui travaillent en équipe dessus.
-            </p>
-        
-            <ul>                
-                <li>
-                    Comment tu sais qui a fait quoi et quand ? Le versioning de Git va te permettre de le savoir.
-                </li>
-                <li>
-                    Comment t’es sûr que les développeurs ne se gênent pas en touchant les mêmes fichiers en même temps ? Encore une fois, Git à la rescousse avec son système de branches.
-                </li>
-            </ul>
-            <figure>
-                <img src="assets/vscode.png" alt="" width="840">
-                <figcaption>Extension VS Code qui permet de visualiser tout ça: Gitlens</figcaption>
-            </figure>
+                    Là, Linus Torvalds pète un câble et décide de coder lui-même un nouveau système de versionnage. Le
+                    développement FULGURANT de <a href="https://git-scm.com">Git</a> allait bientôt démarrer. Le 3 avril
+                    2005, Linus se lance dans la création de Git. Le 6 avril 2005, il envoie un mail bien remonté pour
+                    annoncer qu’il bosse sur une alternative. Le 18 avril 2005, <a
+                        href="https://marc.info/?l=git&m=111377572329534">les premiers merges de branches</a> sont
+                    opérationnels ! Le 29 avril 2005, Git commence à être utilisé dans certaines parties de Linux. Et le
+                    16 juin 2005, Git gérait toute la version 2.6.12 de Linux.
+                </p>
+                <p>
+                    Il y bosse depuis 1991, et tu t'en doutes, le projet est colossal. Il y a une quantité massive de
+                    code. Et encore plus de personnes qui bossent dessus.
+                </p>
+                <img src="assets/fiwwh.jpg" alt="Git history" class="card-image">
+                <p>
+                    Peu de temps après, Linus décida de filer les clefs à Junio Hamano qui en fit une version 1.0
+                    déployée le 21 décembre 2005. Aujourd’hui, <span class="bold">Git est absolument partout.</span>
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>À quoi sert <span class="highlight">Git</span> ?</h2>
+                <p>
+                    Git est un système de contrôle de version open source. Concrètement, c’est un outil qui te permet de
+                    <span class="orange">traquer tous les fichiers de ton projet</span>. Chaque modification de fichier
+                    est alors détectée par Git et versionnée dans une version instantanée. Un historique de modification
+                    va être disponible sur ton projet. Tu vas pouvoir le consulter et pourquoi pas même <span
+                        class="orange">revenir en arrière dans le temps !</span>
+                </p>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Versioning</h3>
+                        <p>Chaque modification est versionnée dans une version instantanée</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Historique</h3>
+                        <p>Consultez l'historique complet des modifications</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Collaboration</h3>
+                        <p>Travaillez en équipe sans conflit</p>
+                    </div>
+                </div>
+                <img src="assets/time.png" alt="Git timeline" class="card-image">
+                <p>
+                    <span class="orange">
+                        Git est un outil qui va te permettre de savoir qui a touché à quel fichier, quand et comment.
+                    </span>
+                    Imagine, t’as 2000 fichiers et 5 développeurs qui travaillent en équipe dessus.
+                </p>
+
+                <ul>
+                    <li>
+                        Comment tu sais qui a fait quoi et quand ? Le versioning de Git va te permettre de le savoir.
+                    </li>
+                    <li>
+                        Comment t’es sûr que les développeurs ne se gênent pas en touchant les mêmes fichiers en même
+                        temps ? Encore une fois, Git à la rescousse avec son système de branches.
+                    </li>
+                </ul>
+            </article>
 
             <p>
                 <span class="orange">
-                    Chaque développeur va pouvoir travailler en parallèle avec leur propre copie du projet sur une branche personnelle.
+                    Chaque développeur va pouvoir travailler en parallèle avec leur propre copie du projet sur une
+                    branche personnelle.
                 </span>
-                 Une fois leur travail fini, les copies de travail seront <span class="orange">fusionnées</span> !
+                Une fois leur travail fini, les copies de travail seront <span class="orange">fusionnées</span> !
                 <br>
-                En plus de ça, contrairement à certains de ces concurrents, Git est décentralisé. Ça veut dire que l’historique des fichiers est présent dans chacune des machines où se trouve le projet. Ce qui diffère d’une architecture centralisée où tu peux pas faire grand-chose sans un seul serveur qui gère tout.
+                En plus de ça, contrairement à certains de ces concurrents, Git est décentralisé. Ça veut dire que
+                l’historique des fichiers est présent dans chacune des machines où se trouve le projet. Ce qui diffère
+                d’une architecture centralisée où tu peux pas faire grand-chose sans un seul serveur qui gère tout.
                 <br><br>
                 Bon, c’est peut-être pas encore tout à fait clair, regardons comment ça marche !
             </p>
@@ -73,85 +137,221 @@
                 <span class="orange">Comment</span> ça marche ?
             </h1>
             <p>
-                D'abord, il faut installer Git sur ta machine. Ensuite, tu vas pouvoir initialiser un dépôt Git dans ton projet. C’est ce qu’on appelle un <span class="orange">« repository »</span>. C’est là que Git va stocker toutes les versions de ton projet.
+                D'abord, il faut installer Git sur ta machine. Ensuite, tu vas pouvoir initialiser un dépôt Git dans ton
+                projet. C’est ce qu’on appelle un <span class="orange">« repository »</span>. C’est là que Git va
+                stocker toutes les versions de ton projet.
                 <br><br>
-                Pour se faire, rien de plus simple: 
+                Pour se faire, rien de plus simple:
             </p>
+
             <img src="assets/code5.png" alt="git init" class="code">
             <p>
-                La première chose à comprendre avec le fonctionnement de Git c’est qu’il fait <span class="orange">des instantanés (snapshots en anglais) de ton projet pour le versionner.</span> Là où les autres systèmes de versioning comme Subversion et Perforce vont faire des diffs sur chaque fichier. Cette différence est importante. Elle va permettre à Git de se distinguer côté performance et travail de développeur en parallèle via 
+                La première chose à comprendre avec le fonctionnement de Git c’est qu’il fait <span class="orange">des
+                    instantanés (snapshots en anglais) de ton projet pour le versionner.</span> Là où les autres
+                systèmes de versioning comme Subversion et Perforce vont faire des diffs sur chaque fichier. Cette
+                différence est importante. Elle va permettre à Git de se distinguer côté performance et travail de
+                développeur en parallèle via
                 <a href="https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref">
                     les branches !
                 </a>
                 <br><br>
-                Secondes choses à bien comprendre avec Git : <span class="orange"> les zones de travail.</span> Il y a plusieurs zones où les fichiers de ton projet vont "vivre" dans Git. C’est super important de comprendre cette partie pour ne pas être perdu.
+                Secondes choses à bien comprendre avec Git : <span class="orange"> les zones de travail.</span> Il y a
+                plusieurs zones où les fichiers de ton projet vont "vivre" dans Git. C’est super important de comprendre
+                cette partie pour ne pas être perdu.
                 <br><br>
                 On trouve trois zones bien distinctes en local sur ton poste de travail.
-                <ul>
-                    <li>
-                        <span class="orange">Zone de travail (Working Directory)</span> : c’est là où ton dépôt git est initialisé et que tes fichiers vivent. C’est dans cette zone que tu touches à tous tes fichiers pendant que tu bosses. Une fois que tu veux versionner une version de ton projet, tu vas alors taper la commande <span class="orange">« git add » </span>pour passer un fichier à la zone suivante.
-                    </li>
-                    <li>
-                        <span class="orange">Zone de transit (Staging Area)</span> : la zone de transit est un endroit pour désigner les fichiers que tu veux versionner. Tu peux voir la commande <span class="orange">« git add »</span> comme une manière de mettre des objets dans un carton. Une fois que tu as désigné tout ce que tu voulais mettre dans ce carton, il sera prêt à être envoyé au dépôt avec la commande <span class="orange">« git commit »</span>.
-                    </li>
-                    <li>
-                        <span class="orange">Dépôt local (Local Repository)</span> : la zone de dépôt c’est là que les fameux instantanés de ton projet sont versionnés et stockés. Le truc important à comprendre c’est qu’une référence de version est créée pour chaque commit que tu fais. Chaque commit est donc une version de ton projet unique qui va vivre dans le dépôt et que tu pourras consulter/comparer quand tu voudras !
-                    </li>
-                </ul>
-                <p>
-                    Jusqu'ici, on est resté sur ton poste de travail. Une fois que tu as versionné comme tu le voulais, tu pourras partager ton travail en le poussant vers le dépôt distant avec un <span class="orange">« git push ».</span> Avant de t'expliquer tous ces trucs, petit schéma !
-                </p>
-                <img src="assets/schema.jpg" alt="schema">
-                <p>
-                    Ce sont les quatre commandes que tu vas utiliser tout le temps et c’est le flow que tu vas avoir en permanence. Maintenant, tu vas forcément bosser avec d’autres développeurs. Pour bien gérer ça, il va falloir que tu utilises les branches.
-                </p>
-                <h1>Voyons les <span class="orange">commandes</span>✨</h1>
-                <p>
-                    Pour installer Git, tu trouveras ton bonheur ici. Pour la petite démo, on va imaginer un scénario. Ça va pas être dur à imaginer : c’est ce qui va t’arriver en permanence.
-                </p>
-                <ol>
-                    <li><span class="orange">Mettre à jour</span> la branche principale</li>
-                    <li><span class="orange">Faire une branche</span> pour travailler dans ton coin</li>
-                    <li>Faire plusieurs <span class="orange">commits</span></li>
-                    <li><span class="orange">Réduire ces commits</span> en un seul commit</li>
-                    <li><span class="orange">Push</span> tes changements sur le dépôt remote</li>
-                </ol>
-                <p>
-                    Je pars du principe que tu as déjà un dépôt Git en local que tu as cloné d’un dépôt distant via la commande <span class="orange">git clone </span>. <br>Commençons par mettre à jour la branche principale: <span class="orange">master</span> 
-                </p>
-                <img src="assets/code1.png" alt="" class="code">
-                <p>On utilise la commande <span class="orange">git pull</span> pour mettre à jour notre dépôt local avec les updates du dépôt distant. Ensuite, on crée une branche.</p>
-                <img src="assets/code2.png" alt="" class="code">
-                <p>
-                    Grâce à la commande <span class="orange">git checkout -b </span>on va créer une branche (une copie de la branche principale) et se placer dessus automatiquement. 
-                    <br>
-                    J’utilise le nom <span class="orange">"ma-nouvelle-branche" ici.</span>
-                    Quand tu bosses avec Git il est également conseillé de <a href="https://www.pauline-vos.nl/atomic-commits">commit fréquemment</a>. C’est ce qu’on va faire ici.
-                </p>
-                <img src="assets/code3.png" alt="" class="code">
-                <br>
-                    <p>
-                        La commande <span class="orange">git status</span> te permet de vérifier l'état de ton dépôt Git en local, en affichant les modifications en cours, les fichiers en attente de commit, et si ta branche est synchronisée avec le répo distant (remote).</p>
-                        <img src="assets/code4.png" alt="" class="code">
-                    <p>Et voila, tu as les bases pour utiliser Git partout!</p>
+            <ul>
+                <li>
+                    <span class="orange">Zone de travail (Working Directory)</span> : c’est là où ton dépôt git est
+                    initialisé et que tes fichiers vivent. C’est dans cette zone que tu touches à tous tes fichiers
+                    pendant que tu bosses. Une fois que tu veux versionner une version de ton projet, tu vas alors taper
+                    la commande <span class="orange">« git add » </span>pour passer un fichier à la zone suivante.
+                </li>
+                <li>
+                    <span class="orange">Zone de transit (Staging Area)</span> : la zone de transit est un endroit pour
+                    désigner les fichiers que tu veux versionner. Tu peux voir la commande <span class="orange">« git
+                        add »</span> comme une manière de mettre des objets dans un carton. Une fois que tu as désigné
+                    tout ce que tu voulais mettre dans ce carton, il sera prêt à être envoyé au dépôt avec la commande
+                    <span class="orange">« git commit »</span>.
+                </li>
+                <li>
+                    <span class="orange">Dépôt local (Local Repository)</span> : la zone de dépôt c’est là que les
+                    fameux instantanés de ton projet sont versionnés et stockés. Le truc important à comprendre c’est
+                    qu’une référence de version est créée pour chaque commit que tu fais. Chaque commit est donc une
+                    version de ton projet unique qui va vivre dans le dépôt et que tu pourras consulter/comparer quand
+                    tu voudras !
+                </li>
+            </ul>
+            <p>
+                Jusqu'ici, on est resté sur ton poste de travail. Une fois que tu as versionné comme tu le voulais, tu
+                pourras partager ton travail en le poussant vers le dépôt distant avec un <span class="orange">« git
+                    push ».</span> Avant de t'expliquer tous ces trucs, petit schéma !
             </p>
-            <p>J’espère que cette introduction t’a donné envie d’en découvrir davantage. Pour vraiment maîtriser cet outil incroyable, il faudra pratiquer et plonger dans <a href="https://git-scm.com/docs/git#_git_commands">la documentation.</a></p>
+            <article class="card">
+                <h2>Zones de travail Git</h2>
+                <div class="git-zones">
+                    <div class="zone">
+                        <h3>Working Directory</h3>
+                        <p>Zone de travail où vivent vos fichiers</p>
+                    </div>
+                    <div class="zone">
+                        <h3>Staging Area</h3>
+                        <p>Zone de transit pour les fichiers à commiter</p>
+                    </div>
+                    <div class="zone">
+                        <h3>Local Repository</h3>
+                        <p>Dépôt local où sont stockées les versions</p>
+                    </div>
+                </div>
+                <img src="assets/schema.jpg" alt="Git workflow schema" class="card-image">
+            </article>
+            <article class="card">
+                <h2>Les commandes essentielles</h2>
+                <div class="commands-grid">
+                    <div class="command-item">
+                        <div class="code-block">
+                            <pre><code>git init</code></pre>
+                        </div>
+                        <p>Initialise un nouveau dépôt Git</p>
+                    </div>
+                    <div class="command-item">
+                        <div class="code-block">
+                            <pre><code>git add .</code></pre>
+                        </div>
+                        <p>Ajoute tous les fichiers à la zone de transit</p>
+                    </div>
+                    <div class="command-item">
+                        <div class="code-block">
+                            <pre><code>git commit -m "message"</code></pre>
+                        </div>
+                        <p>Crée une nouvelle version avec un message</p>
+                    </div>
+                    <div class="command-item">
+                        <div class="code-block">
+                            <pre><code>git push</code></pre>
+                        </div>
+                        <p>Envoie les modifications vers le dépôt distant</p>
+                    </div>
+
+                    <div class="command-item">
+                        <div class="code-block">
+                            <pre><code>git pull</code></pre>
+                        </div>
+                        <p>Récupère les modifications du dépôt distant et les fusionne dans la branche locale.</p>
+                    </div>
+                </div>
+            </article>
+            <p>
+                Ce sont quelques commandes que tu vas utiliser tout le temps et c’est le flow que tu vas avoir en
+                permanence. Maintenant, tu vas forcément bosser avec d’autres développeurs. Pour bien gérer ça, il va
+                falloir que tu utilises les branches.
+            </p>
+            <h1>Voyons les <span class="orange">commandes</span>✨</h1>
+            <p>
+                Pour installer Git, tu trouveras ton bonheur ici. Pour la petite démo, on va imaginer un scénario. Ça va
+                pas être dur à imaginer : c’est ce qui va t’arriver en permanence.
+            </p>
+            <ol>
+                <li><span class="orange">Mettre à jour</span> la branche principale</li>
+                <li><span class="orange">Faire une branche</span> pour travailler dans ton coin</li>
+                <li>Faire plusieurs <span class="orange">commits</span></li>
+                <li><span class="orange">Réduire ces commits</span> en un seul commit</li>
+                <li><span class="orange">Push</span> tes changements sur le dépôt remote</li>
+            </ol>
+            <p>
+                Je pars du principe que tu as déjà un dépôt Git en local que tu as cloné d’un dépôt distant via la
+                commande <span class="orange">git clone </span>. <br>Commençons par mettre à jour la branche principale:
+                <span class="orange">master</span>
+            </p>
+            <img src="assets/code1.png" alt="" class="code">
+            <p>On utilise la commande <span class="orange">git pull</span> pour mettre à jour notre dépôt local avec les
+                updates du dépôt distant. Ensuite, on crée une branche.</p>
+            <img src="assets/code2.png" alt="" class="code">
+            <p>
+                Grâce à la commande <span class="orange">git checkout -b </span>on va créer une branche (une copie de la
+                branche principale) et se placer dessus automatiquement.
+                <br>
+                J’utilise le nom <span class="orange">"ma-nouvelle-branche" ici.</span>
+                Quand tu bosses avec Git il est également conseillé de <a
+                    href="https://www.pauline-vos.nl/atomic-commits">commit fréquemment</a>. C’est ce qu’on va faire
+                ici.
+            </p>
+            <img src="assets/code3.png" alt="" class="code">
             <br>
-            <p>Tu peux aussi télécharger <a href="assets/git-recap.pdf" target="_blank" class="pdf">ce pdf</a> gratuitement pour avoir un résumé des commandes de bases à connaître.</p>
-        </div>
-        <footer>
-            <img src="assets/linus.jpg" alt="" class="code">
-            <div class="icons">
-            <a href="https://youtube.com/@mxr_codes" target="_blank"><img src="assets/socials/youtube.png" alt="YouTube MXR CODES" width=""></a>
-            <a href="https://instagram.com/mxr.codes" target="_blank"><img src="assets/socials/instagram.png" alt="Instagram mxr.codes"></a>
+            <p>
+                La commande <span class="orange">git status</span> te permet de vérifier l'état de ton dépôt Git en
+                local, en affichant les modifications en cours, les fichiers en attente de commit, et si ta branche est
+                synchronisée avec le répo distant (remote).</p>
+            <img src="assets/code4.png" alt="" class="code">
+            <p>Et voila, tu as les bases pour utiliser Git partout!</p>
+            </p>
+
+
+
+            <article class="card">
+                <h2>Workflow Git</h2>
+                <div class="workflow-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <h3>Mettre à jour</h3>
+                        <p>Commencez par mettre à jour votre branche principale</p>
+                        <div class="code-block">
+                            <pre><code>git pull origin main</code></pre>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <h3>Créer une branche</h3>
+                        <p>Créez une nouvelle branche pour vos modifications</p>
+                        <div class="code-block">
+                            <pre><code>git checkout -b ma-feature</code></pre>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <h3>Commiter</h3>
+                        <p>Faites vos modifications et créez des commits</p>
+                        <div class="code-block">
+                            <pre><code>git add .
+                            git commit -m "feat: nouvelle fonctionnalité"</code></pre>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <h3>Pousser</h3>
+                        <p>Envoyez vos modifications vers le dépôt distant</p>
+                        <div class="code-block">
+                            <pre><code>git push origin ma-feature</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="download-section">
+            <div class="card">
+                <h2>Téléchargez le récapitulatif</h2>
+                <p>Obtenez gratuitement le PDF avec toutes les commandes essentielles de Git</p>
+                <a href="assets/git-recap.pdf" target="_blank" class="download-button">Télécharger le PDF</a>
             </div>
-            <br>
-            <p>💡 Fun fact: La construction de ce site web même est traqué ici, et tu peux y contribuer sur <a href="https://github.com/mamour-dx/learn-git" target="_blank">GitHub</a></p>
-        </footer>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="assets/linus.jpg" alt="Linus Torvalds" class="footer-image">
+            <div class="social-links">
+                <a href="https://youtube.com/@mxr_codes" target="_blank" class="social-link">
+                    <img src="assets/socials/youtube.png" alt="YouTube MXR CODES">
+                </a>
+                <a href="https://instagram.com/mxr.codes" target="_blank" class="social-link">
+                    <img src="assets/socials/instagram.png" alt="Instagram mxr.codes">
+                </a>
+            </div>
+            <p class="footer-text">💡 Fun fact: La construction de ce site web même est traqué ici, et tu peux y
+                contribuer sur <a href="https://github.com/mamour-dx/learn-git" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+
 </html>
-
-
-
-
-
-
