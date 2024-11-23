@@ -1,6 +1,6 @@
 # 🚀 Comprendre Git en 5 minutes
 
-![Git Logo](assets/Git-logo.svg.png)
+![Git Logo](assets/img/git-logo.svg)
 
 Un tutoriel simple et efficace pour comprendre les bases de Git, conçu pour les développeurs débutants qui souhaitent maîtriser rapidement cet outil essentiel.
 

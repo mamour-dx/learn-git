@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction à Git</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light-theme.css" id="theme-link">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,15 +18,16 @@
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <img src="assets/Git-logo.svg.png" alt="git logo" class="nav-logo">
+            <img src="assets/img/git-logo.svg" alt="git logo" class="nav-logo">
             <div class="nav-title">Git Tutoriel</div>
+            <img id="icon-theme" class="theme-icon" src="assets/img/sun.png" alt="bright-theme-icon">
         </div>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
             <h1 class="hero-title">Comprendre Git en 5 minutes!</h1>
-            <img src="assets/github-mascot.jpg" alt="github mascot" class="hero-image">
+            <img src="assets/img/github-mascot.jpg" alt="github mascot" class="hero-image">
         </div>
     </header>
 
@@ -71,7 +73,7 @@
                     Il y bosse depuis 1991, et tu t'en doutes, le projet est colossal. Il y a une quantité massive de
                     code. Et encore plus de personnes qui bossent dessus.
                 </p>
-                <img src="assets/fiwwh.jpg" alt="Git history" class="card-image">
+                <img src="assets/img/fiwwh.jpg" alt="Git history" class="card-image">
                 <p>
                     Peu de temps après, Linus décida de filer les clefs à Junio Hamano qui en fit une version 1.0
                     déployée le 21 décembre 2005. Aujourd’hui, <span class="bold">Git est absolument partout.</span>
@@ -101,7 +103,7 @@
                         <p>Travaillez en équipe sans conflit</p>
                     </div>
                 </div>
-                <img src="assets/time.png" alt="Git timeline" class="card-image">
+                <img src="assets/img/time.png" alt="Git timeline" class="card-image">
                 <p>
                     <span class="orange">
                         Git est un outil qui va te permettre de savoir qui a touché à quel fichier, quand et comment.
@@ -109,7 +111,7 @@
                     Imagine, t’as 2000 fichiers et 5 développeurs qui travaillent en équipe dessus.
                 </p>
 
-                <ul>
+                <ul class="list">
                     <li>
                         Comment tu sais qui a fait quoi et quand ? Le versioning de Git va te permettre de le savoir.
                     </li>
@@ -144,7 +146,7 @@
                 Pour se faire, rien de plus simple:
             </p>
 
-            <img src="assets/code5.png" alt="git init" class="code">
+            <img src="assets/img/code5.png" alt="git init" class="code">
             <p>
                 La première chose à comprendre avec le fonctionnement de Git c’est qu’il fait <span class="orange">des
                     instantanés (snapshots en anglais) de ton projet pour le versionner.</span> Là où les autres
@@ -160,7 +162,7 @@
                 cette partie pour ne pas être perdu.
                 <br><br>
                 On trouve trois zones bien distinctes en local sur ton poste de travail.
-            <ul>
+            <ul class="list">
                 <li>
                     <span class="orange">Zone de travail (Working Directory)</span> : c’est là où ton dépôt git est
                     initialisé et que tes fichiers vivent. C’est dans cette zone que tu touches à tous tes fichiers
@@ -203,7 +205,9 @@
                         <p>Dépôt local où sont stockées les versions</p>
                     </div>
                 </div>
-                <img src="assets/schema.jpg" alt="Git workflow schema" class="card-image">
+                <div class="workflow-img-container">
+                    <img src="assets/img/schema.jpg" alt="Git workflow schema" class="card-image workflow-img">
+                </div>
             </article>
             <article class="card">
                 <h2>Les commandes essentielles</h2>
@@ -251,7 +255,7 @@
                 Pour installer Git, tu trouveras ton bonheur ici. Pour la petite démo, on va imaginer un scénario. Ça va
                 pas être dur à imaginer : c’est ce qui va t’arriver en permanence.
             </p>
-            <ol>
+            <ol class="list">
                 <li><span class="orange">Mettre à jour</span> la branche principale</li>
                 <li><span class="orange">Faire une branche</span> pour travailler dans ton coin</li>
                 <li>Faire plusieurs <span class="orange">commits</span></li>
@@ -263,10 +267,10 @@
                 commande <span class="orange">git clone </span>. <br>Commençons par mettre à jour la branche principale:
                 <span class="orange">master</span>
             </p>
-            <img src="assets/code1.png" alt="" class="code">
+            <img src="assets/img/code1.png" alt="" class="code">
             <p>On utilise la commande <span class="orange">git pull</span> pour mettre à jour notre dépôt local avec les
                 updates du dépôt distant. Ensuite, on crée une branche.</p>
-            <img src="assets/code2.png" alt="" class="code">
+            <img src="assets/img/code2.png" alt="" class="code">
             <p>
                 Grâce à la commande <span class="orange">git checkout -b </span>on va créer une branche (une copie de la
                 branche principale) et se placer dessus automatiquement.
@@ -276,13 +280,13 @@
                     href="https://www.pauline-vos.nl/atomic-commits">commit fréquemment</a>. C’est ce qu’on va faire
                 ici.
             </p>
-            <img src="assets/code3.png" alt="" class="code">
+            <img src="assets/img/code3.png" alt="" class="code">
             <br>
             <p>
                 La commande <span class="orange">git status</span> te permet de vérifier l'état de ton dépôt Git en
                 local, en affichant les modifications en cours, les fichiers en attente de commit, et si ta branche est
                 synchronisée avec le répo distant (remote).</p>
-            <img src="assets/code4.png" alt="" class="code">
+            <img src="assets/img/code4.png" alt="" class="code">
             <p>Et voila, tu as les bases pour utiliser Git partout!</p>
             </p>
 
@@ -332,26 +336,27 @@
             <div class="card">
                 <h2>Téléchargez le récapitulatif</h2>
                 <p>Obtenez gratuitement le PDF avec toutes les commandes essentielles de Git</p>
-                <a href="assets/git-recap.pdf" target="_blank" class="download-button">Télécharger le PDF</a>
+                <a href="assets/file/git-recap.pdf" target="_blank" class="download-button">Télécharger le PDF</a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <img src="assets/linus.jpg" alt="Linus Torvalds" class="footer-image">
+            <img src="assets/img/linus.jpg" alt="Linus Torvalds" class="footer-image">
             <div class="social-links">
                 <a href="https://youtube.com/@mxr_codes" target="_blank" class="social-link">
-                    <img src="assets/socials/youtube.png" alt="YouTube MXR CODES">
+                    <img src="assets/img/youtube.png" alt="YouTube MXR CODES">
                 </a>
                 <a href="https://instagram.com/mxr.codes" target="_blank" class="social-link">
-                    <img src="assets/socials/instagram.png" alt="Instagram mxr.codes">
+                    <img src="assets/img/instagram.png" alt="Instagram mxr.codes">
                 </a>
             </div>
             <p class="footer-text">💡 Fun fact: La construction de ce site web même est traqué ici, et tu peux y
                 contribuer sur <a href="https://github.com/mamour-dx/learn-git" target="_blank">GitHub</a></p>
         </div>
     </footer>
+    <script src="js/themeScript.js" defer></script>
 </body>
 
 </html>
