@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction à Git</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light-theme.css" id="theme-link">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,8 +18,9 @@
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <img src="assets/Git-logo.svg.png" alt="git logo" class="nav-logo">
+            <img src="assets/git-logo.svg" alt="git logo" class="nav-logo">
             <div class="nav-title">Git Tutoriel</div>
+            <img id="icon-theme" class="theme-icon" src="assets/sun.png" alt="bright-theme-icon">
         </div>
     </nav>
 
@@ -109,7 +111,7 @@
                     Imagine, t’as 2000 fichiers et 5 développeurs qui travaillent en équipe dessus.
                 </p>
 
-                <ul>
+                <ul class="list">
                     <li>
                         Comment tu sais qui a fait quoi et quand ? Le versioning de Git va te permettre de le savoir.
                     </li>
@@ -160,7 +162,7 @@
                 cette partie pour ne pas être perdu.
                 <br><br>
                 On trouve trois zones bien distinctes en local sur ton poste de travail.
-            <ul>
+            <ul class="list">
                 <li>
                     <span class="orange">Zone de travail (Working Directory)</span> : c’est là où ton dépôt git est
                     initialisé et que tes fichiers vivent. C’est dans cette zone que tu touches à tous tes fichiers
@@ -203,7 +205,9 @@
                         <p>Dépôt local où sont stockées les versions</p>
                     </div>
                 </div>
-                <img src="assets/schema.jpg" alt="Git workflow schema" class="card-image">
+                <div class="workflow-img-container">
+                    <img src="assets/schema.jpg" alt="Git workflow schema" class="card-image workflow-img">
+                </div>
             </article>
             <article class="card">
                 <h2>Les commandes essentielles</h2>
@@ -251,7 +255,7 @@
                 Pour installer Git, tu trouveras ton bonheur ici. Pour la petite démo, on va imaginer un scénario. Ça va
                 pas être dur à imaginer : c’est ce qui va t’arriver en permanence.
             </p>
-            <ol>
+            <ol class="list">
                 <li><span class="orange">Mettre à jour</span> la branche principale</li>
                 <li><span class="orange">Faire une branche</span> pour travailler dans ton coin</li>
                 <li>Faire plusieurs <span class="orange">commits</span></li>
@@ -352,6 +356,7 @@
                 contribuer sur <a href="https://github.com/mamour-dx/learn-git" target="_blank">GitHub</a></p>
         </div>
     </footer>
+    <script src="js/themeScript.js" defer></script>
 </body>
 
 </html>
