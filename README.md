@@ -80,7 +80,7 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour p
 **MXR CODES**
 - YouTube : [@mxr_codes](https://youtube.com/@mxr_codes)
 - Instagram : [@mxr.codes](https://instagram.com/mxr.codes)
-- 
+  
 **Abdou Sow**
 - Instagram: [@abdou_sow404](https://www.instagram.com/abdou_sow404)
 - GitHub: [@sow-abdou](https://github.com/sow-abdou)
