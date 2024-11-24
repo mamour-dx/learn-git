@@ -42,12 +42,6 @@ body {
     width: auto;
 }
 
-.nav-title {
-    color: var(--text-color);
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
 .theme-icon {
     width: 24px;
     position: absolute;
@@ -385,10 +379,6 @@ a:hover {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 1.5rem;
-    }
-
-    .nav-title {
-        font-size: 1.2rem;
     }
 
     .card {
