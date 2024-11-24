@@ -273,6 +273,28 @@ body {
     color: white;
 }
 
+/*contributors messages*/
+.message-title{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 287px;
+}
+
+.message{
+    display: none;
+}
+
+.arrow{
+    font-size:larger;
+    margin-left: 10px;
+}
+
+.message-list{
+    margin-left: var(--spacing);
+}
+
 /* Footer */
 .footer {
     background-color: var(--card-background);
