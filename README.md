@@ -85,6 +85,10 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour p
 - Instagram: [@abdou_sow404](https://www.instagram.com/abdou_sow404)
 - GitHub: [@sow-abdou](https://github.com/sow-abdou)
 
+**El Hadji Ibrahima Cissé**
+- Instagram: [@___eic___](https://www.instagram.com/___eic___)
+- GitHub: [@EIC95](https://github.com/EIC95)
+
 ## ⭐️ Support
 
 Si ce tutoriel vous a été utile, n'hésitez pas à :
