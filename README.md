@@ -23,6 +23,7 @@ Ce tutoriel interactif vous guide à travers les concepts fondamentaux de Git en
 - 💡 Conseils pratiques et astuces
 - 📱 Design responsive
 - 🌍 Interface en français
+- 🔆 Théme clair et sombre 
 
 ## 🚀 Démarrage Rapide
 
