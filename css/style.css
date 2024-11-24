@@ -86,7 +86,9 @@ body {
     flex-direction: column;
     gap: var(--spacing);
 }
-
+.code {
+    border-radius: 20px;
+}
 .intro-text {
     font-size: 1.2rem;
     color: var(--secondary-color);
