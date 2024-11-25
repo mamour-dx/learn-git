@@ -36,7 +36,7 @@ git clone https://github.com/mamour-dx/learn-git.git
 
 ou
 
-Visitez directement la version en ligne : [Learn Git](https://mamour-dx.github.io/learn-git/)
+Visitez directement la version en ligne : [Learn Git](https://git.mxr.codes)
 
 ## 📋 Contenu du Tutoriel
 
@@ -59,10 +59,11 @@ Visitez directement la version en ligne : [Learn Git](https://mamour-dx.github.i
 Les contributions sont les bienvenues ! Voici comment vous pouvez nous aider :
 
 1. Forkez le projet
-2. Créez votre branche (`git checkout -b feature/AmazingFeature`)
-3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Poussez vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
+2. Clonez le projet (`git clone https://github.com/your-username/learn-git`)
+3. Créez votre branche (`git checkout -b your-branch`)
+4. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
+5. Poussez vos changements sur votre repo (`git push origin your-branch`)
+6. Ouvrez un Pull Request
 
 ## 📝 Guide de Contribution
 
@@ -110,4 +111,4 @@ Un grand merci à tous les contributeurs qui ont aidé à améliorer ce tutoriel
 ---
 💡 **Fun fact**: La construction de ce site web même est traquée ici, et tu peux y contribuer !
 
-Made with ❤️ by [Mamour DX](https://github.com/mamour-dx)
+Made with ❤️ by [mxr.codes](https://github.com/mamour-dx)
